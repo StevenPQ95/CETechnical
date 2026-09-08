@@ -145,7 +145,7 @@ function initServiceForm() {
 
     // Número de teléfono de TinkyTech (IMPORTANTE: Reemplazar por el número real del proyecto)
     // No usar el símbolo '+'
-    const numeroWhatsApp = "51999999999"; 
+    const numeroWhatsApp = "51938342188"; 
     
     // Crear el mensaje formateado usando saltos de línea codificados (%0A)
     let textoWhatsApp = `*¡Hola equipo TinkyTech!* 🔧%0AMi nombre es *${nombre}* y quisiera solicitar un servicio:%0A%0A`;
