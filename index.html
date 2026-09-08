@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechChancay - Servicio Técnico de Computadoras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">TechChancay</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Expertos en Mantenimiento y Reparación de PC</h1>
+            <p>Servicio técnico de confianza a precios accesibles para toda la comunidad.</p>
+            <a href="#contacto" class="btn">Solicitar Diagnóstico</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Mantenimiento Preventivo</h3>
+                <p>Limpieza profunda de hardware, cambio de pasta térmica y optimización de software para que tu equipo vuele.</p>
+            </div>
+            <div class="service-card">
+                <h3>Reparación de Hardware</h3>
+                <p>Diagnóstico de fallas físicas, reemplazo de componentes dañados y actualización a discos sólidos (SSD).</p>
+            </div>
+            <div class="service-card">
+                <h3>Soporte de Software</h3>
+                <p>Eliminación de virus, instalación de sistemas operativos, formateo seguro y respaldo de información.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <p>Visítanos en nuestro stand en la Plaza de Armas o envíanos un mensaje.</p>
+        <form id="contactForm">
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            <input type="text" id="equipo" placeholder="Marca de tu equipo (Ej. HP, Lenovo)" required>
+            <textarea id="problema" placeholder="Describe el problema de tu computadora..." required></textarea>
+            <button type="submit" class="btn">Enviar Consulta</button>
+        </form>
+        <div id="mensajeExito" class="oculto">¡Gracias! Hemos recibido tu solicitud. Un técnico te atenderá pronto.</div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 TechChancay - Proyecto de Especialidad de Computación.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
