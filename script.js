@@ -12,7 +12,7 @@ const TINKYTECH_CONFIG = {
     Cuando tengas el número real de WhatsApp, cambia SOLO este valor.
     Formato internacional sin +, espacios ni guiones.
   */
-  whatsapp: "51999999999",
+  whatsapp: "51938342188",
 
   whatsappDefaultMessage:
     "Hola TinkyTech, quisiera consultar por un servicio.",
