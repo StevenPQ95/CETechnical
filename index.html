@@ -3,384 +3,1713 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TinkyTech: diagnóstico, mantenimiento, repotenciación, instalación de sistemas, seguridad informática y asesoría tecnológica.">
+
+  <meta
+    name="description"
+    content="TinkyTech: asesoría para compra y repotenciación de computadoras, mantenimiento preventivo y correctivo, instalación de sistemas, seguridad y programas."
+  >
   <meta name="theme-color" content="#061a33">
 
   <title>TinkyTech | Rendimiento que se nota, calidad que perdura</title>
 
-  <!-- Librería de Iconos Profesionales (Boxicons) -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+  <!-- Boxicons: familia de iconos uniforme -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  >
+
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 
 <body>
 
+  <!--
+    ============================================================
+    TINKYTECH — V2
+    Estructura pensada para GitHub Pages.
+
+    IMPORTANTE:
+    - Los datos marcados como PROVISIONALES son ejemplos.
+    - Las fotografías de evidencias son las que ya tienes en
+      la carpeta "evidencias".
+    - No se publican testimonios ficticios.
+  -->
+
   <!-- =========================================================
-       HEADER / NAVEGACIÓN
+       HEADER
        ========================================================= -->
   <header class="site-header" id="site-header">
     <div class="container header-inner">
 
       <a class="brand" href="#inicio" aria-label="TinkyTech - inicio">
-        <img src="isologo.png" alt="TinkyTech" class="brand-logo" onerror="this.src='https://via.placeholder.com/43/061a33/00d8ff?text=TT'">
+        <img
+          src="isologo.png"
+          alt="TinkyTech"
+          class="brand-logo"
+          width="48"
+          height="48"
+        >
         <span class="brand-name">TinkyTech</span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#proceso">¿Cómo trabajamos?</a>
-        <a href="#trabajos">Evidencias</a>
-        <a href="#nosotros">Nosotros</a>
-        <a class="btn btn-primary nav-cta" href="#contacto">Solicitar servicio</a>
+      <nav
+        class="main-nav"
+        id="main-nav"
+        aria-label="Navegación principal"
+      >
+        <a class="nav-link active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#servicios">Servicios</a>
+        <a class="nav-link" href="#problemas">Diagnóstico</a>
+        <a class="nav-link" href="#proceso">Proceso</a>
+        <a class="nav-link" href="#trabajos">Evidencias</a>
+        <a class="nav-link" href="#nosotros">Nosotros</a>
+
+        <a class="btn btn-primary nav-cta" href="#contacto">
+          <i class="bx bx-wrench"></i>
+          Solicitar servicio
+        </a>
       </nav>
 
     </div>
   </header>
 
+
   <main>
+
     <!-- =========================================================
-         HERO / INICIO
+         HERO
          ========================================================= -->
     <section class="hero" id="inicio">
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow"><i class='bx bx-rocket'></i> BIENVENIDO A TINKYTECH</p>
-          <h1>Soluciones tecnológicas <span>para el cuidado de tus equipos.</span></h1>
+      <div class="hero-grid container">
+
+        <div class="hero-content reveal">
+
+          <p class="eyebrow hero-eyebrow">
+            <i class="bx bx-chip"></i>
+            BIENVENIDO A TINKYTECH
+          </p>
+
+          <h1>
+            Soluciones tecnológicas
+            <span>para el cuidado de tus equipos.</span>
+          </h1>
+
           <p class="hero-text">
-            Diagnóstico, mantenimiento, repotenciación, instalación de sistemas
-            y orientación técnica experta. Revive tu computadora y mejora su rendimiento con nosotros.
+            Asesoría para comprar o repotenciar tu computadora,
+            mantenimiento, instalación de sistemas, seguridad y software
+            para ayudarte a usar tu equipo con mayor confianza.
           </p>
+
           <p class="hero-slogan">
-            <i class='bx bxs-quote-alt-left'></i> Rendimiento que se nota, calidad que perdura.
+            <i class="bx bxs-quote-alt-left"></i>
+            Rendimiento que se nota, calidad que perdura.
           </p>
+
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contacto">
-              <i class='bx bx-wrench'></i> Solicitar diagnóstico
+              <i class="bx bx-wrench"></i>
+              Solicitar diagnóstico
             </a>
-            <a class="btn btn-whatsapp" href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20quisiera%20consultar%20por%20un%20servicio." target="_blank" rel="noopener">
-              <i class='bx bxl-whatsapp'></i> Chat directo
+
+            <!-- Número PROVISIONAL -->
+            <a
+              class="btn btn-whatsapp js-whatsapp-link"
+              href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20quisiera%20consultar%20por%20un%20servicio."
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bxl-whatsapp"></i>
+              Chat directo
             </a>
           </div>
+
           <div class="hero-note">
-            <i class='bx bx-check-shield'></i> Proyecto educativo y emprendedor EPT – CET 34.
+            <i class="bx bx-check-shield"></i>
+            Proyecto educativo y emprendedor de EPT – Computación e Informática del CET 34.
           </div>
+
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual reveal" aria-hidden="true">
+
           <div class="hero-image-frame">
-            <img src="bienvenida.png" alt="TinkyTech Especialistas" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+            <img
+              src="bienvenida.png"
+              alt=""
+              fetchpriority="high"
+              width="1200"
+              height="900"
+            >
           </div>
-          <div class="hero-badge hero-badge-top">
-            <strong>100%</strong>
-            <span>CONFIABLE</span>
-            <span>EFICIENTE</span>
+
+          <div class="hero-badge">
+            <span class="hero-badge-label">TINKYTECH</span>
+            <strong>ORIENTA</strong>
+            <strong>REVISA</strong>
+            <strong>MEJORA</strong>
           </div>
+
+          <div class="hero-tech-line" aria-hidden="true"></div>
+
         </div>
+
       </div>
     </section>
+
 
     <!-- =========================================================
          BARRA DE CONFIANZA
          ========================================================= -->
     <section class="trust-bar" aria-label="Compromisos de TinkyTech">
       <div class="container trust-grid">
+
         <article class="trust-item reveal">
-          <div class="trust-icon"><i class='bx bx-stopwatch'></i></div>
+          <div class="trust-icon">
+            <i class="bx bx-stopwatch"></i>
+          </div>
           <div>
-            <h2>Atención ágil</h2>
-            <p>Con responsabilidad y compromiso total.</p>
+            <h2>Atención responsable</h2>
+            <p>Organizamos cada atención con claridad y compromiso.</p>
           </div>
         </article>
+
         <article class="trust-item reveal">
-          <div class="trust-icon"><i class='bx bx-search-alt-2'></i></div>
+          <div class="trust-icon">
+            <i class="bx bx-search-alt-2"></i>
+          </div>
           <div>
-            <h2>Diagnóstico preciso</h2>
-            <p>Analizamos antes de plantear soluciones.</p>
+            <h2>Evaluación previa</h2>
+            <p>Revisamos el equipo antes de proponer una solución.</p>
           </div>
         </article>
+
         <article class="trust-item reveal">
-          <div class="trust-icon"><i class='bx bx-conversation'></i></div>
+          <div class="trust-icon">
+            <i class="bx bx-conversation"></i>
+          </div>
           <div>
-            <h2>Transparencia</h2>
-            <p>Te explicamos cada paso y el porqué.</p>
+            <h2>Comunicación clara</h2>
+            <p>Explicamos hallazgos, alternativas y pasos del servicio.</p>
           </div>
         </article>
+
         <article class="trust-item reveal">
-          <div class="trust-icon"><i class='bx bxs-graduation'></i></div>
+          <div class="trust-icon">
+            <i class="bx bxs-graduation"></i>
+          </div>
           <div>
-            <h2>Comunidad</h2>
-            <p>Respaldo educativo del CET 34.</p>
+            <h2>Proyecto educativo</h2>
+            <p>Aplicamos aprendizajes técnicos en situaciones reales.</p>
           </div>
         </article>
+
       </div>
     </section>
+
 
     <!-- =========================================================
          SERVICIOS
          ========================================================= -->
     <section class="section services-section" id="servicios">
       <div class="container">
+
         <div class="section-heading reveal">
-          <p class="eyebrow"><i class='bx bx-briefcase-alt-2'></i> NUESTROS SERVICIOS</p>
+          <p class="eyebrow">
+            <i class="bx bx-briefcase-alt-2"></i>
+            NUESTROS SERVICIOS
+          </p>
+
           <h2>¿En qué podemos ayudarte?</h2>
-          <p>Soluciones reales y accesibles para que tu equipo funcione como el primer día.</p>
+
+          <p>
+            Servicios y orientación tecnológica pensados para diferentes
+            necesidades de uso, rendimiento y cuidado del equipo.
+          </p>
         </div>
 
         <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-icon"><i class='bx bx-tachometer'></i></div>
-            <h3>Mantenimiento integral</h3>
-            <p>Limpieza física (polvo), cambio de pasta térmica y revisión de hardware para evitar sobrecalentamiento.</p>
-            <a href="#contacto">Solicitar mantenimiento <i class='bx bx-right-arrow-alt'></i></a>
-            <span class="badge-absolute">Más solicitado</span>
+
+          <article class="service-card featured reveal">
+            <span class="service-number">01</span>
+            <div class="service-icon">
+              <i class="bx bx-cart-alt"></i>
+            </div>
+
+            <h3>Asesoría para comprar tu primera computadora</h3>
+
+            <p>
+              Te orientamos para elegir un equipo de acuerdo con tu uso,
+              presupuesto y necesidades reales.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Consultar asesoría
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+            <span class="service-tag">Servicio destacado</span>
           </article>
 
           <article class="service-card reveal">
-            <div class="service-icon"><i class='bx bx-hdd'></i></div>
-            <h3>Repotenciación (Upgrades)</h3>
-            <p>Acelera tu equipo cambiando a discos sólidos (SSD) o aumentando la memoria RAM según compatibilidad.</p>
-            <a href="#contacto">Cotizar mejora <i class='bx bx-right-arrow-alt'></i></a>
+            <span class="service-number">02</span>
+            <div class="service-icon">
+              <i class="bx bx-tachometer"></i>
+            </div>
+
+            <h3>Asesoría para repotenciar tu equipo</h3>
+
+            <p>
+              Analizamos posibilidades de mejora como RAM, almacenamiento
+              u otros componentes compatibles con tu computadora.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Evaluar mejora
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
 
           <article class="service-card reveal">
-            <div class="service-icon"><i class='bx bxl-windows'></i></div>
-            <h3>Instalación de Sistemas</h3>
-            <p>Formateo seguro, instalación de Windows y optimización del sistema operativo desde cero.</p>
-            <a href="#contacto">Consultar servicio <i class='bx bx-right-arrow-alt'></i></a>
+            <span class="service-number">03</span>
+            <div class="service-icon">
+              <i class="bx bx-wrench"></i>
+            </div>
+
+            <h3>Mantenimiento preventivo y correctivo</h3>
+
+            <p>
+              Limpieza, revisión física, mantenimiento y atención de
+              problemas de hardware y software según corresponda.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Solicitar mantenimiento
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
 
           <article class="service-card reveal">
-            <div class="service-icon"><i class='bx bx-shield-quarter'></i></div>
-            <h3>Seguridad y Software</h3>
-            <p>Eliminación de virus, instalación de antivirus y programas esenciales (Office, AutoCAD, diseño, etc.).</p>
-            <a href="#contacto">Ver programas <i class='bx bx-right-arrow-alt'></i></a>
+            <span class="service-number">04</span>
+            <div class="service-icon">
+              <i class="bx bxl-windows"></i>
+            </div>
+
+            <h3>Instalación de sistemas operativos</h3>
+
+            <p>
+              Instalación y configuración del sistema operativo de acuerdo
+              con las características y necesidades del equipo.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Consultar instalación
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
           </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">05</span>
+            <div class="service-icon">
+              <i class="bx bx-shield-quarter"></i>
+            </div>
+
+            <h3>Seguridad y antivirus</h3>
+
+            <p>
+              Instalación y configuración básica de soluciones de seguridad
+              y recomendaciones para proteger el equipo y su información.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Consultar seguridad
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">06</span>
+            <div class="service-icon">
+              <i class="bx bx-package"></i>
+            </div>
+
+            <h3>Instalación de programas</h3>
+
+            <p>
+              Instalación y configuración de programas básicos y especializados,
+              como Office, AutoCAD y otras herramientas.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Ver programas
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">07</span>
+            <div class="service-icon">
+              <i class="bx bx-search-alt"></i>
+            </div>
+
+            <h3>Diagnóstico y revisión</h3>
+
+            <p>
+              Evaluación inicial para identificar posibles causas antes
+              de decidir qué procedimiento realizar.
+            </p>
+
+            <a href="#problemas" class="service-link">
+              Revisar problema
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">08</span>
+            <div class="service-icon">
+              <i class="bx bx-support"></i>
+            </div>
+
+            <h3>Asesoría y soporte tecnológico</h3>
+
+            <p>
+              Orientación básica para configuración, componentes, respaldo
+              de información y otras necesidades relacionadas.
+            </p>
+
+            <a href="#contacto" class="service-link">
+              Hacer una consulta
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </article>
+
         </div>
+
+        <div class="section-note reveal">
+          <i class="bx bx-info-circle"></i>
+          <p>
+            <strong>Importante:</strong>
+            los servicios publicados deben corresponder a las capacidades
+            reales y autorizadas de TinkyTech. Las condiciones definitivas
+            se comunicarán antes de cualquier atención.
+          </p>
+        </div>
+
       </div>
     </section>
 
+
     <!-- =========================================================
-         CÓMO TRABAJAMOS (PROCESO)
+         SELECTOR DE PROBLEMAS
+         ========================================================= -->
+    <section class="section problem-section" id="problemas">
+      <div class="container problem-layout">
+
+        <div class="problem-intro reveal">
+
+          <p class="eyebrow">
+            <i class="bx bx-search"></i>
+            ORIENTACIÓN RÁPIDA
+          </p>
+
+          <h2>¿Qué problema presenta tu computadora?</h2>
+
+          <p>
+            Selecciona el síntoma que más se parece a tu situación.
+            Te mostraremos una orientación general, no un diagnóstico definitivo.
+          </p>
+
+          <div class="problem-notice">
+            <i class="bx bx-info-circle"></i>
+            <p>
+              Un mismo síntoma puede tener diferentes causas.
+              Para determinar el origen es necesaria una revisión técnica.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="problem-tool reveal">
+
+          <div
+            class="problem-options"
+            role="group"
+            aria-label="Selecciona el problema de tu computadora"
+          >
+
+            <button
+              class="problem-option"
+              type="button"
+              data-problem="no-enciende"
+            >
+              <i class="bx bx-power-off"></i>
+              <span>No enciende</span>
+            </button>
+
+            <button
+              class="problem-option"
+              type="button"
+              data-problem="lenta"
+            >
+              <i class="bx bx-timer"></i>
+              <span>Está lenta</span>
+            </button>
+
+            <button
+              class="problem-option"
+              type="button"
+              data-problem="sin-imagen"
+            >
+              <i class="bx bx-desktop"></i>
+              <span>No muestra imagen</span>
+            </button>
+
+            <button
+              class="problem-option"
+              type="button"
+              data-problem="reinicia"
+            >
+              <i class="bx bx-refresh"></i>
+              <span>Se reinicia</span>
+            </button>
+
+            <button
+              class="problem-option"
+              type="button"
+              data-problem="calienta"
+            >
+              <i class="bx bx-thermometer"></i>
+              <span>Se calienta</span>
+            </button>
+
+            <button
+              class="problem-option"
+              type="button"
+              data-problem="ruido"
+            >
+              <i class="bx bx-volume-full"></i>
+              <span>Hace mucho ruido</span>
+            </button>
+
+            <button
+              class="problem-option problem-option-wide"
+              type="button"
+              data-problem="otro"
+            >
+              <i class="bx bx-message-rounded-dots"></i>
+              <span>Otro problema</span>
+            </button>
+
+          </div>
+
+          <aside
+            class="problem-result"
+            id="problem-result"
+            aria-live="polite"
+          >
+            <div class="result-icon">
+              <i class="bx bx-bulb"></i>
+            </div>
+
+            <p class="eyebrow">ORIENTACIÓN GENERAL</p>
+
+            <h3>Selecciona un síntoma</h3>
+
+            <p>
+              Aquí aparecerá una orientación inicial sobre el problema
+              seleccionado.
+            </p>
+
+            <a class="btn btn-primary" href="#contacto">
+              Solicitar revisión
+            </a>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         PROCESO
          ========================================================= -->
     <section class="section process-section" id="proceso">
       <div class="container">
+
         <div class="section-heading reveal">
-          <p class="eyebrow"><i class='bx bx-git-repo-forked'></i> METODOLOGÍA</p>
-          <h2>Nuestro proceso de trabajo</h2>
-          <p>Un flujo simple, claro y 100% transparente para tu tranquilidad.</p>
+          <p class="eyebrow">
+            <i class="bx bx-git-branch"></i>
+            NUESTRA METODOLOGÍA
+          </p>
+
+          <h2>¿Cómo trabajamos?</h2>
+
+          <p>
+            Un proceso claro para comprender la necesidad, revisar el equipo
+            y realizar únicamente el servicio acordado.
+          </p>
         </div>
 
-        <div class="process-grid">
+        <div class="process-track">
+
           <article class="process-step reveal">
             <span class="step-number">01</span>
-            <div class="process-icon"><i class='bx bx-message-square-dots'></i></div>
-            <h3>Contacto</h3>
-            <p>Nos cuentas los síntomas de tu equipo vía WhatsApp o formulario.</p>
+            <div class="process-icon">
+              <i class="bx bx-message-square-dots"></i>
+            </div>
+            <h3>Nos contactas</h3>
+            <p>
+              Nos cuentas qué necesitas mediante WhatsApp o formulario.
+            </p>
           </article>
+
           <article class="process-step reveal">
             <span class="step-number">02</span>
-            <div class="process-icon"><i class='bx bx-search'></i></div>
-            <h3>Diagnóstico</h3>
-            <p>Revisamos tu PC o laptop para encontrar la raíz exacta del problema.</p>
+            <div class="process-icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <h3>Conocemos el problema</h3>
+            <p>
+              Recopilamos información inicial y escuchamos tu necesidad.
+            </p>
           </article>
+
           <article class="process-step reveal">
             <span class="step-number">03</span>
-            <div class="process-icon"><i class='bx bx-spreadsheet'></i></div>
-            <h3>Propuesta</h3>
-            <p>Te explicamos qué falla y te damos las mejores alternativas y costos.</p>
+            <div class="process-icon">
+              <i class="bx bx-cog"></i>
+            </div>
+            <h3>Revisamos</h3>
+            <p>
+              Realizamos una evaluación o diagnóstico preliminar.
+            </p>
           </article>
+
           <article class="process-step reveal">
             <span class="step-number">04</span>
-            <div class="process-icon"><i class='bx bx-check-double'></i></div>
-            <h3>Solución y Pruebas</h3>
-            <p>Reparamos y hacemos test de estrés para asegurar que todo funcione perfecto.</p>
+            <div class="process-icon">
+              <i class="bx bx-file"></i>
+            </div>
+            <h3>Te explicamos</h3>
+            <p>
+              Comunicamos lo encontrado y las alternativas disponibles.
+            </p>
           </article>
+
+          <article class="process-step reveal">
+            <span class="step-number">05</span>
+            <div class="process-icon">
+              <i class="bx bx-wrench"></i>
+            </div>
+            <h3>Realizamos el servicio</h3>
+            <p>
+              Ejecutamos únicamente el procedimiento acordado.
+            </p>
+          </article>
+
+          <article class="process-step reveal">
+            <span class="step-number">06</span>
+            <div class="process-icon">
+              <i class="bx bx-check-circle"></i>
+            </div>
+            <h3>Verificamos</h3>
+            <p>
+              Comprobamos el resultado y brindamos recomendaciones.
+            </p>
+          </article>
+
         </div>
+
       </div>
     </section>
 
+
     <!-- =========================================================
-         NUESTRO TRABAJO (GALERÍA)
+         EVIDENCIAS
          ========================================================= -->
     <section class="section work-section" id="trabajos">
       <div class="container">
+
         <div class="section-heading section-heading-row reveal">
           <div>
-            <p class="eyebrow"><i class='bx bx-images'></i> PORTAFOLIO</p>
+            <p class="eyebrow">
+              <i class="bx bx-images"></i>
+              PORTAFOLIO
+            </p>
+
             <h2>Evidencias de nuestro trabajo</h2>
-            <p>Fotos reales de los equipos que hemos optimizado y reparado.</p>
+
+            <p>
+              Actividades técnicas realizadas dentro del proyecto.
+              Las fotografías mostradas corresponden a materiales del proyecto.
+            </p>
           </div>
         </div>
 
         <div class="gallery-grid">
-          <figure class="work-card reveal">
-            <img src="evidencias/limpieza.png" alt="Limpieza PC" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=600'">
-            <figcaption>
-              <strong>Mantenimiento Preventivo</strong>
-              <span>Limpieza profunda y cambio de pasta térmica</span>
-            </figcaption>
-          </figure>
-          <figure class="work-card reveal">
-            <img src="evidencias/ensamblaje.png" alt="Ensamblaje" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600'">
-            <figcaption>
-              <strong>Ensamblaje de PCs</strong>
-              <span>Armado a medida para oficina o diseño</span>
-            </figcaption>
-          </figure>
-          <figure class="work-card reveal">
-            <img src="evidencias/instalacion.png" alt="Software" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600'">
-            <figcaption>
-              <strong>Soporte de Software</strong>
-              <span>Instalación de SO y programas especializados</span>
-            </figcaption>
-          </figure>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-gallery-title="Mantenimiento preventivo"
+            data-gallery-image="evidencias/limpieza.png"
+            data-gallery-description="Limpieza y mantenimiento de equipos. Reemplazar o complementar con la descripción real de la actividad."
+          >
+            <span class="work-image">
+              <img
+                src="evidencias/limpieza.png"
+                alt="Evidencia de limpieza y mantenimiento de computadora"
+                loading="lazy"
+              >
+            </span>
+
+            <span class="work-overlay">
+              <span class="work-category">
+                <i class="bx bx-wrench"></i>
+                Mantenimiento
+              </span>
+
+              <strong>Limpieza y mantenimiento</strong>
+
+              <span class="work-action">
+                Ver evidencia
+                <i class="bx bx-expand-alt"></i>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-gallery-title="Ensamblaje de equipos"
+            data-gallery-image="evidencias/ensamblaje.png"
+            data-gallery-description="Proceso de ensamblaje de componentes. Reemplazar por la descripción real de la actividad."
+          >
+            <span class="work-image">
+              <img
+                src="evidencias/ensamblaje.png"
+                alt="Evidencia de ensamblaje de computadora"
+                loading="lazy"
+              >
+            </span>
+
+            <span class="work-overlay">
+              <span class="work-category">
+                <i class="bx bx-chip"></i>
+                Ensamblaje
+              </span>
+
+              <strong>Ensamblaje de equipos</strong>
+
+              <span class="work-action">
+                Ver evidencia
+                <i class="bx bx-expand-alt"></i>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-gallery-title="Instalación de sistemas"
+            data-gallery-image="evidencias/instalacion.png"
+            data-gallery-description="Instalación y configuración de sistemas. Reemplazar por la descripción real de la actividad."
+          >
+            <span class="work-image">
+              <img
+                src="evidencias/instalacion.png"
+                alt="Evidencia de instalación de sistema operativo"
+                loading="lazy"
+              >
+            </span>
+
+            <span class="work-overlay">
+              <span class="work-category">
+                <i class="bx bxl-windows"></i>
+                Software
+              </span>
+
+              <strong>Instalación de sistemas</strong>
+
+              <span class="work-action">
+                Ver evidencia
+                <i class="bx bx-expand-alt"></i>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-gallery-title="Instalación de programas"
+            data-gallery-image="evidencias/programas.png"
+            data-gallery-description="Instalación y configuración de programas. Reemplazar por la descripción real de la actividad."
+          >
+            <span class="work-image">
+              <img
+                src="evidencias/programas.png"
+                alt="Evidencia de instalación de programas"
+                loading="lazy"
+              >
+            </span>
+
+            <span class="work-overlay">
+              <span class="work-category">
+                <i class="bx bx-package"></i>
+                Programas
+              </span>
+
+              <strong>Instalación de programas</strong>
+
+              <span class="work-action">
+                Ver evidencia
+                <i class="bx bx-expand-alt"></i>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-gallery-title="Revisión de componentes"
+            data-gallery-image="evidencias/revision.png"
+            data-gallery-description="Revisión de componentes y conexiones. Reemplazar por la descripción real de la actividad."
+          >
+            <span class="work-image">
+              <img
+                src="evidencias/revision.png"
+                alt="Evidencia de revisión de componentes"
+                loading="lazy"
+              >
+            </span>
+
+            <span class="work-overlay">
+              <span class="work-category">
+                <i class="bx bx-search-alt-2"></i>
+                Hardware
+              </span>
+
+              <strong>Revisión de componentes</strong>
+
+              <span class="work-action">
+                Ver evidencia
+                <i class="bx bx-expand-alt"></i>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-gallery-title="Configuración y seguridad"
+            data-gallery-image="evidencias/seguridad.png"
+            data-gallery-description="Configuración de seguridad y protección del equipo. Reemplazar por la descripción real de la actividad."
+          >
+            <span class="work-image">
+              <img
+                src="evidencias/seguridad.png"
+                alt="Evidencia de configuración y seguridad de computadora"
+                loading="lazy"
+              >
+            </span>
+
+            <span class="work-overlay">
+              <span class="work-category">
+                <i class="bx bx-shield-quarter"></i>
+                Seguridad
+              </span>
+
+              <strong>Configuración y seguridad</strong>
+
+              <span class="work-action">
+                Ver evidencia
+                <i class="bx bx-expand-alt"></i>
+              </span>
+            </span>
+          </button>
+
         </div>
+
+        <div class="work-guideline reveal">
+          <i class="bx bx-file-find"></i>
+
+          <p>
+            <strong>Próxima mejora:</strong>
+            cada evidencia podrá mostrar situación inicial, procedimiento
+            realizado y resultado o aprendizaje, usando únicamente información real.
+          </p>
+        </div>
+
       </div>
     </section>
 
+
     <!-- =========================================================
-         TESTIMONIOS (NUEVA SECCIÓN)
+         UBICACIÓN / ATENCIÓN
          ========================================================= -->
-    <section class="section problem-section" style="background: var(--gray-50);">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow"><i class='bx bxs-star'></i> LO QUE DICEN DE NOSOTROS</p>
-          <h2>Clientes Satisfechos</h2>
+    <section class="section location-section" id="ubicacion">
+      <div class="container location-grid">
+
+        <div class="location-info reveal">
+
+          <p class="eyebrow">
+            <i class="bx bx-map"></i>
+            ATENCIÓN
+          </p>
+
+          <h2>¿Dónde atendemos?</h2>
+
+          <p>
+            La información de esta sección es <strong>PROVISIONAL</strong>
+            y será reemplazada por los datos oficiales antes de publicar el
+            QR definitivo.
+          </p>
+
+          <div class="location-card">
+            <div class="location-icon">
+              <i class="bx bx-map-pin"></i>
+            </div>
+            <div>
+              <h3>Punto de atención · EJEMPLO</h3>
+              <p>CET 34 – Huaral, Lima, Perú</p>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <div class="location-icon">
+              <i class="bx bx-time-five"></i>
+            </div>
+            <div>
+              <h3>Horario · EJEMPLO</h3>
+              <p>
+                Lunes a viernes · 8:00 a. m. – 5:00 p. m.<br>
+                Previa coordinación.
+              </p>
+            </div>
+          </div>
+
+          <div class="location-actions">
+
+            <a
+              class="btn btn-primary"
+              href="https://maps.google.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-map"></i>
+              Cómo llegar
+            </a>
+
+            <a class="btn btn-outline" href="#contacto">
+              <i class="bx bx-message-rounded"></i>
+              Consultar atención
+            </a>
+
+          </div>
+
         </div>
-        <div class="process-grid">
-          <article class="process-step reveal" style="text-align: left;">
-            <div style="color: #f5b301; font-size: 1.5rem; margin-bottom: 10px;">★★★★★</div>
-            <p><em>"Mi laptop demoraba 10 minutos en prender. Le cambiaron el disco a sólido y ahora prende en segundos. Excelente atención de los chicos."</em></p>
-            <h3 style="margin-top: 15px; font-size: 0.9rem;">— Carlos M.</h3>
-          </article>
-          <article class="process-step reveal" style="text-align: left;">
-            <div style="color: #f5b301; font-size: 1.5rem; margin-bottom: 10px;">★★★★★</div>
-            <p><em>"Llevé la PC de mi hijo porque se calentaba mucho. Le hicieron mantenimiento físico y quedó como nueva, sin ruidos. Muy recomendados."</em></p>
-            <h3 style="margin-top: 15px; font-size: 0.9rem;">— Ana R.</h3>
-          </article>
-          <article class="process-step reveal" style="text-align: left;">
-            <div style="color: #f5b301; font-size: 1.5rem; margin-bottom: 10px;">★★★★★</div>
-            <p><em>"Profesionales y transparentes. Me explicaron paso a paso qué programas iban a instalar. Un servicio de primera en Chancay."</em></p>
-            <h3 style="margin-top: 15px; font-size: 0.9rem;">— Jorge L.</h3>
-          </article>
+
+        <div class="location-visual reveal">
+
+          <div class="location-image-placeholder">
+            <i class="bx bx-buildings"></i>
+            <strong>Foto del punto de atención</strong>
+            <span>Reemplazar por fotografía real del CET 34.</span>
+          </div>
+
+          <div class="location-caption">
+            <strong>“Tecnología al servicio de nuestra comunidad”</strong>
+            <span>Información provisional.</span>
+          </div>
+
         </div>
+
       </div>
     </section>
 
+
     <!-- =========================================================
-         CONTACTO / FORMULARIO
+         NOSOTROS
+         ========================================================= -->
+    <section class="section about-section" id="nosotros">
+      <div class="container about-grid">
+
+        <div class="about-visual reveal">
+
+          <div class="logo-showcase">
+            <img
+              src="imagotipo.png"
+              alt="Imagotipo de TinkyTech"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="about-mini-card">
+            <i class="bx bxs-graduation"></i>
+            <div>
+              <strong>Proyecto educativo</strong>
+              <span>EPT – Computación e Informática · CET 34</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-content reveal">
+
+          <p class="eyebrow">
+            <i class="bx bx-heart"></i>
+            SOBRE TINKYTECH
+          </p>
+
+          <h2>
+            Conocimiento técnico llevado a situaciones reales.
+          </h2>
+
+          <p>
+            TinkyTech nace como un proyecto de emprendimiento de estudiantes
+            de EPT – Computación e Informática del CET 34.
+          </p>
+
+          <p>
+            Nuestro propósito es aplicar los aprendizajes técnicos en
+            situaciones reales y acercar soluciones tecnológicas responsables
+            a nuestra comunidad.
+          </p>
+
+          <div class="about-cards">
+
+            <article>
+              <span class="about-card-icon">
+                <i class="bx bx-target-lock"></i>
+              </span>
+              <h3>Misión</h3>
+              <p>
+                Brindar orientación y servicios tecnológicos responsables,
+                con atención clara y comprometida.
+              </p>
+            </article>
+
+            <article>
+              <span class="about-card-icon">
+                <i class="bx bx-rocket"></i>
+              </span>
+              <h3>Visión</h3>
+              <p>
+                Demostrar cómo los estudiantes pueden transformar sus
+                conocimientos y habilidades en soluciones de valor.
+              </p>
+            </article>
+
+            <article>
+              <span class="about-card-icon">
+                <i class="bx bx-group"></i>
+              </span>
+              <h3>Valores</h3>
+              <p>
+                Responsabilidad, honestidad, respeto, aprendizaje continuo,
+                trabajo en equipo y compromiso con la comunidad.
+              </p>
+            </article>
+
+          </div>
+
+          <a class="btn btn-primary" href="#equipo">
+            <i class="bx bx-group"></i>
+            Conoce nuestro equipo
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         EQUIPO
+         ========================================================= -->
+    <section class="section team-section" id="equipo">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="eyebrow">
+            <i class="bx bx-group"></i>
+            NUESTRO EQUIPO
+          </p>
+
+          <h2>Personas detrás de la solución.</h2>
+
+          <p>
+            Los nombres y fotografías se incorporarán según las autorizaciones
+            correspondientes.
+          </p>
+        </div>
+
+        <div class="team-showcase reveal">
+
+          <div class="team-logo-panel">
+            <img
+              src="isotipo.png"
+              alt="Isotipo de TinkyTech"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="team-copy">
+            <span class="team-label">TINKYTECH · CET 34</span>
+
+            <h3>
+              Un equipo que aprende, aplica y comparte.
+            </h3>
+
+            <p>
+              La organización del proyecto contempla diferentes funciones
+              para atender las necesidades técnicas y comunicativas.
+            </p>
+
+            <div class="roles-grid">
+
+              <article class="role-card">
+                <i class="bx bx-phone-call"></i>
+                <div>
+                  <strong>Atención y recepción</strong>
+                  <span>Contacto inicial y registro de necesidades.</span>
+                </div>
+              </article>
+
+              <article class="role-card">
+                <i class="bx bx-search"></i>
+                <div>
+                  <strong>Diagnóstico</strong>
+                  <span>Evaluación inicial y recopilación de información.</span>
+                </div>
+              </article>
+
+              <article class="role-card">
+                <i class="bx bx-wrench"></i>
+                <div>
+                  <strong>Mantenimiento</strong>
+                  <span>Apoyo en procedimientos técnicos.</span>
+                </div>
+              </article>
+
+              <article class="role-card">
+                <i class="bx bx-desktop"></i>
+                <div>
+                  <strong>Soporte técnico</strong>
+                  <span>Instalación, configuración y optimización.</span>
+                </div>
+              </article>
+
+              <article class="role-card">
+                <i class="bx bx-megaphone"></i>
+                <div>
+                  <strong>Comunicación</strong>
+                  <span>Difusión del proyecto y relación con la comunidad.</span>
+                </div>
+              </article>
+
+            </div>
+
+            <p class="team-note">
+              <i class="bx bx-info-circle"></i>
+              Añadiremos fotografías y nombres reales cuando estén definidos
+              y cuenten con las autorizaciones correspondientes.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         DESAFÍO TECNOLÓGICO
+         ========================================================= -->
+    <section class="section challenge-section" id="desafio">
+      <div class="container">
+
+        <div class="challenge-card reveal">
+
+          <div class="challenge-content">
+
+            <p class="eyebrow">
+              <i class="bx bx-brain"></i>
+              DESAFÍO TINKYTECH
+            </p>
+
+            <h2>¿Puedes identificar el problema?</h2>
+
+            <p>
+              Pon a prueba tus conocimientos con un caso breve.
+              La respuesta correcta no significa que exista una única causa:
+              un diagnóstico real requiere una revisión completa.
+            </p>
+
+            <div class="challenge-question">
+              <span>CASO</span>
+
+              <p>
+                Una computadora enciende, pero no muestra imagen en el monitor.
+                ¿Qué afirmación es más correcta?
+              </p>
+            </div>
+
+            <div class="challenge-options">
+
+              <button type="button">
+                A. Puede existir un problema de RAM.
+              </button>
+
+              <button type="button">
+                B. Puede existir un problema de conexión.
+              </button>
+
+              <button type="button">
+                C. Puede existir un problema de pantalla o monitor.
+              </button>
+
+              <button type="button">
+                D. El mismo síntoma puede tener diferentes causas.
+              </button>
+
+            </div>
+
+            <div
+              class="challenge-feedback"
+              id="challenge-feedback"
+              aria-live="polite"
+            >
+              Selecciona una alternativa para conocer la explicación.
+            </div>
+
+          </div>
+
+          <div class="challenge-visual">
+            <div class="challenge-logo-ring">
+              <img
+                src="isotipo.png"
+                alt="Isotipo TinkyTech"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         FAQ
+         ========================================================= -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+
+        <div class="faq-intro reveal">
+
+          <p class="eyebrow">
+            <i class="bx bx-help-circle"></i>
+            PREGUNTAS FRECUENTES
+          </p>
+
+          <h2>Resolvemos algunas dudas frecuentes.</h2>
+
+          <p>
+            Las respuestas definitivas deberán actualizarse de acuerdo con
+            las condiciones reales del servicio.
+          </p>
+
+        </div>
+
+        <div class="faq-list reveal">
+
+          <details class="faq-item">
+            <summary>
+              ¿Qué tipo de equipos atienden?
+              <i class="bx bx-plus"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>EJEMPLO:</strong>
+                principalmente computadoras de escritorio y otros equipos
+                que correspondan a los servicios definidos por TinkyTech.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Cómo solicito una revisión?
+              <i class="bx bx-plus"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Puedes escribirnos por WhatsApp o enviar el formulario con
+                una descripción breve de la necesidad o síntoma observado.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Cuánto tiempo puede tomar un servicio?
+              <i class="bx bx-plus"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Depende del tipo de revisión o servicio y de las condiciones
+                del equipo. El tiempo se comunicará después de la evaluación.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Qué necesito para solicitar un servicio?
+              <i class="bx bx-plus"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Basta con contarnos qué equipo tienes y qué problema o
+                necesidad estás observando. Recopilaremos la información
+                necesaria para orientarte.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Instalan programas como AutoCAD?
+              <i class="bx bx-plus"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Sí, la propuesta contempla instalación y configuración de
+                programas básicos y especializados. La disponibilidad y
+                condiciones concretas se definirán para cada atención.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿El diagnóstico tiene algún costo?
+              <i class="bx bx-plus"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>PROVISIONAL:</strong>
+                este punto deberá definirse antes de publicar la versión final.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         CONTACTO
          ========================================================= -->
     <section class="section contact-section" id="contacto">
       <div class="container contact-grid">
-        <div class="contact-intro reveal">
-          <p class="eyebrow"><i class='bx bx-support'></i> CONTÁCTANOS</p>
-          <h2>¿Listo para mejorar tu equipo?</h2>
-          <p>Déjanos tus datos y un técnico de TinkyTech se pondrá en contacto contigo inmediatamente.</p>
 
-          <div class="contact-data" style="margin-top: 30px;">
-            <p><i class='bx bx-map' style="color: var(--blue-600); font-size: 1.2rem;"></i> <strong>Ubicación:</strong> Plaza de Armas Chancay (Expoferia) / CET 34</p>
-            <p><i class='bx bx-time' style="color: var(--blue-600); font-size: 1.2rem;"></i> <strong>Horario:</strong> Lunes a Viernes (Previa coordinación)</p>
-            <p><i class='bx bx-envelope' style="color: var(--blue-600); font-size: 1.2rem;"></i> <strong>Correo:</strong> soporte@tinkytech.com</p>
+        <div class="contact-intro reveal">
+
+          <p class="eyebrow">
+            <i class="bx bx-support"></i>
+            CONTÁCTANOS
+          </p>
+
+          <h2>Cuéntanos qué necesitas.</h2>
+
+          <p>
+            Puedes escribirnos directamente por WhatsApp o enviarnos una
+            solicitud con algunos datos básicos de tu equipo.
+          </p>
+
+          <a
+            class="contact-whatsapp-card js-whatsapp-link"
+            href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20quiero%20consultar%20por%20un%20servicio."
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-whatsapp-icon">
+              <i class="bx bxl-whatsapp"></i>
+            </span>
+
+            <span class="contact-whatsapp-text">
+              <strong>WhatsApp</strong>
+              <small>+51 999 999 999 · PROVISIONAL</small>
+            </span>
+
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+
+          <div class="contact-data">
+
+            <p>
+              <i class="bx bx-map-pin"></i>
+              <strong>Ubicación:</strong>
+              CET 34 – Huaral · PROVISIONAL
+            </p>
+
+            <p>
+              <i class="bx bx-time-five"></i>
+              <strong>Horario:</strong>
+              Previa coordinación · PROVISIONAL
+            </p>
+
+            <p>
+              <i class="bx bx-envelope"></i>
+              <strong>Correo:</strong>
+              contacto@tinkytech.example · PROVISIONAL
+            </p>
+
           </div>
+
         </div>
 
         <div class="contact-form-wrapper reveal">
-          <form id="service-form" class="service-form" action="#" method="post" novalidate>
+
+          <form
+            id="service-form"
+            class="service-form"
+            action="#"
+            method="post"
+            novalidate
+          >
+
             <div class="form-row">
+
               <div class="form-group">
                 <label for="nombre">Nombre completo *</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ej. Juan Pérez"
+                  autocomplete="name"
+                  required
+                >
               </div>
+
               <div class="form-group">
                 <label for="telefono">WhatsApp *</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="999 999 999" required>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="999 999 999"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                >
               </div>
+
             </div>
+
             <div class="form-row">
+
               <div class="form-group">
                 <label for="equipo">Tipo de equipo</label>
+
                 <select id="equipo" name="equipo">
-                  <option value="No especificado">Selecciona...</option>
+                  <option value="">Selecciona...</option>
+                  <option value="Computadora de escritorio">
+                    Computadora de escritorio
+                  </option>
                   <option value="Laptop">Laptop</option>
-                  <option value="PC de Escritorio">Computadora de Escritorio</option>
-                  <option value="Impresora/Otro">Otro accesorio</option>
+                  <option value="Otro">Otro
+                  </option>
                 </select>
               </div>
+
               <div class="form-group">
-                <label for="servicio">¿Qué necesitas?</label>
+                <label for="servicio">Servicio de interés</label>
+
                 <select id="servicio" name="servicio">
-                  <option value="No especificado">Selecciona...</option>
-                  <option value="Mantenimiento">Mantenimiento preventivo</option>
-                  <option value="Repotenciacion">Repotenciación (Más veloz)</option>
-                  <option value="Formateo">Formateo e Instalación de Windows</option>
-                  <option value="Diagnostico">Mi PC falla y necesito diagnóstico</option>
+                  <option value="">Selecciona...</option>
+                  <option value="Asesoría para comprar computadora">
+                    Comprar computadora
+                  </option>
+                  <option value="Asesoría para repotenciar">
+                    Repotenciar equipo
+                  </option>
+                  <option value="Mantenimiento preventivo/correctivo">
+                    Mantenimiento
+                  </option>
+                  <option value="Instalación de sistema operativo">
+                    Sistema operativo
+                  </option>
+                  <option value="Seguridad y antivirus">
+                    Seguridad y antivirus
+                  </option>
+                  <option value="Instalación de programas">
+                    Instalación de programas
+                  </option>
+                  <option value="Diagnóstico y revisión">
+                    Diagnóstico y revisión
+                  </option>
+                  <option value="Otro">
+                    Otro
+                  </option>
                 </select>
               </div>
+
             </div>
+
             <div class="form-group">
-              <label for="mensaje">Describe el problema brevemente</label>
-              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ej. Mi computadora enciende pero la pantalla se queda en negro..."></textarea>
+              <label for="mensaje">Cuéntanos qué necesitas</label>
+
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Describe brevemente el problema o consulta..."
+              ></textarea>
             </div>
+
             <div class="form-group checkbox-group">
-              <input type="checkbox" id="consentimiento" name="consentimiento" required>
-              <label for="consentimiento">Acepto enviar estos datos para recibir cotización.</label>
+              <input
+                type="checkbox"
+                id="consentimiento"
+                name="consentimiento"
+                required
+              >
+
+              <label for="consentimiento">
+                Acepto enviar estos datos únicamente para recibir respuesta
+                a mi consulta.
+              </label>
             </div>
+
             <div class="form-actions">
-              <button class="btn btn-primary" type="submit" style="width: 100%;">
-                <i class='bx bx-send'></i> Enviar solicitud
+              <button class="btn btn-primary" type="submit">
+                <i class="bx bx-send"></i>
+                Preparar solicitud
               </button>
+
+              <a
+                class="btn btn-whatsapp js-whatsapp-link"
+                href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20quiero%20consultar%20por%20un%20servicio."
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bxl-whatsapp"></i>
+                WhatsApp
+              </a>
             </div>
-            <p class="form-status" id="form-status" aria-live="polite"></p>
+
+            <p
+              class="form-status"
+              id="form-status"
+              aria-live="polite"
+            ></p>
+
           </form>
+
         </div>
+
       </div>
     </section>
+
   </main>
+
+
+  <!-- =========================================================
+       MODAL DE GALERÍA
+       ========================================================= -->
+  <div
+    class="gallery-modal"
+    id="gallery-modal"
+    aria-hidden="true"
+  >
+    <div class="gallery-modal-backdrop" data-close-gallery></div>
+
+    <div
+      class="gallery-modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="gallery-modal-title"
+    >
+      <button
+        class="gallery-modal-close"
+        type="button"
+        aria-label="Cerrar imagen"
+        data-close-gallery
+      >
+        <i class="bx bx-x"></i>
+      </button>
+
+      <div class="gallery-modal-image-wrap">
+        <img
+          id="gallery-modal-image"
+          src=""
+          alt=""
+        >
+      </div>
+
+      <div class="gallery-modal-content">
+        <p class="eyebrow">EVIDENCIA TINKYTECH</p>
+        <h2 id="gallery-modal-title">Evidencia</h2>
+        <p id="gallery-modal-description"></p>
+      </div>
+    </div>
+  </div>
+
 
   <!-- =========================================================
        FOOTER
        ========================================================= -->
   <footer class="site-footer">
+
     <div class="container footer-grid">
+
       <div class="footer-brand">
-        <h2 style="color: white; font-size: 1.5rem; font-style: italic;">TinkyTech</h2>
-        <p>Rendimiento que se nota, calidad que perdura.</p>
+        <div class="footer-brand-mark">
+          <img
+            src="isotipo.png"
+            alt="TinkyTech"
+            loading="lazy"
+          >
+
+          <div>
+            <strong>TinkyTech</strong>
+            <span>Rendimiento que se nota,<br>calidad que perdura.</span>
+          </div>
+        </div>
+
+        <p class="footer-project">
+          Proyecto de estudiantes de EPT –
+          Computación e Informática · CET 34.
+        </p>
       </div>
-      <div class="footer-links">
+
+      <div class="footer-column">
         <h3>Navegación</h3>
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#trabajos">Proyectos</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#trabajos">Evidencias</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
       </div>
-      <div class="footer-contact">
+
+      <div class="footer-column">
+        <h3>Contacto</h3>
+
+        <a
+          class="js-whatsapp-link"
+          href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20quiero%20consultar%20por%20un%20servicio."
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bx bxl-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <a href="mailto:contacto@tinkytech.example">
+          <i class="bx bx-envelope"></i>
+          contacto@tinkytech.example
+        </a>
+
+        <span>
+          <i class="bx bx-map-pin"></i>
+          CET 34 – Huaral · PROVISIONAL
+        </span>
+      </div>
+
+      <div class="footer-column">
         <h3>Síguenos</h3>
+
         <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
-          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-          <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
+
+          <a
+            href="#"
+            aria-label="Facebook · enlace provisional"
+            title="Facebook · provisional"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+
+          <a
+            href="#"
+            aria-label="Instagram · enlace provisional"
+            title="Instagram · provisional"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            aria-label="TikTok · enlace provisional"
+            title="TikTok · provisional"
+          >
+            <i class="bx bxl-tiktok"></i>
+          </a>
+
         </div>
       </div>
+
     </div>
+
     <div class="container footer-bottom">
-      <p>© <span id="current-year">2026</span> TinkyTech. Proyecto especialidad Computación CET 34.</p>
+
+      <p>
+        © <span id="current-year">2026</span>
+        TinkyTech · Proyecto especialidad Computación CET 34.
+      </p>
+
+      <div class="footer-bottom-links">
+        <a href="#inicio">Volver arriba <i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+
     </div>
+
   </footer>
 
-  <!-- BOTONES FLOTANTES -->
-  <button type="button" class="back-to-top" id="back-to-top" aria-label="Volver arriba">
-    <i class='bx bx-up-arrow-alt'></i>
+
+  <!-- =========================================================
+       BOTONES FLOTANTES
+       ========================================================= -->
+
+  <button
+    type="button"
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Volver arriba"
+  >
+    <i class="bx bx-up-arrow-alt"></i>
   </button>
 
-  <a href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20necesito%20soporte%20t%C3%A9cnico." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-    <i class='bx bxl-whatsapp'></i>
+  <a
+    href="https://wa.me/51999999999?text=Hola%20TinkyTech%2C%20necesito%20orientaci%C3%B3n."
+    class="whatsapp-float js-whatsapp-link"
+    target="_blank"
+    rel="noopener"
+    aria-label="Escribir por WhatsApp"
+  >
+    <i class="bx bxl-whatsapp"></i>
   </a>
 
 </body>
