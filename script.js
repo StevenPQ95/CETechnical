@@ -110,7 +110,7 @@ function initServiceForm() {
     const formData = new FormData(form);
     const greeting = getGreeting();
     
-    let wppText = `¡${greeting} TinkyTech! 🚀%0AMi nombre es *${formData.get("nombre").trim()}* y quisiera cotizar un servicio:%0A%0A`;
+    let wppText = `¡${greeting} TinkuyTech! 🚀%0AMi nombre es *${formData.get("nombre").trim()}* y quisiera cotizar un servicio:%0A%0A`;
     
     if(formData.get("equipo")) wppText += `💻 *Mi equipo es:* ${formData.get("equipo")}%0A`;
     if(formData.get("servicio")) wppText += `🔧 *Servicio de interés:* ${formData.get("servicio")}%0A`;
