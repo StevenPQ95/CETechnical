@@ -463,7 +463,7 @@ return;
 
 const message =
 
-"Hola TinkyTech 👋. Deseo solicitar orientación técnica sobre mi equipo.";
+"Hola TinkuyTech 👋. Deseo solicitar orientación técnica sobre mi equipo.";
 
 
 
@@ -605,7 +605,7 @@ const text =
 
 `
 
-Hola TinkyTech 👋
+Hola TinkuyTech 👋
 
 
 Deseo solicitar orientación técnica.
